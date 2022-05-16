@@ -1,0 +1,590 @@
+body {
+	background-color:  #ffffff;
+}
+a {
+    text-decoration: none;
+}
+.logo {
+	position: absolute;	
+	width: 20%;
+	height: 15%;
+	left:10%;
+	top: 3%;
+	# background-color: #293133;
+}
+
+.branches {
+	position: absolute;	
+	width: 25%;
+	height: 15%;
+	left: 25%;
+}
+
+#branches_text, #booking_text, #personal_account_text, #on_main_text {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    color: #434B4D;
+}
+
+#branches_text {
+    margin-left: 40%;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.booking {
+	position: absolute;	
+	width: 25%;
+	height: 15%;
+	left: 50%;
+}
+
+#booking_text {
+	margin-left: 35%;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.personal_account {
+	position: absolute;	
+	width: 25%;
+	height: 15%;
+	left: 75%;
+}
+#personal_account_text {
+	margin-left: 10%;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.profile {
+	position:absolute;
+	width: 80%;
+	height: 120%;
+	top: 20%;
+	left: 10%;
+	background-color: #E5E4E2;
+} 
+.profile_left_part {
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    background-color: #434B4D;
+}
+#user_image {
+    width: 200px;
+    margin-left: 22%;
+    margin-top: 20%;
+    height: 200px;
+}
+#id_profile {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex; 
+    color: #E5E4E2;
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.profile_upper_part {
+    position: absolute;
+    height: 10%;
+    width:75%;
+    margin-left: 25%;
+    # background-color: #88706B;
+}
+.mobile {
+	position: absolute;
+	margin-top: 3.5%;
+	margin-left: 85%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex; 
+    color: #474A5;
+}
+.line_up_part_1, .line_up_part_2 {
+	background-color: #434B4D;
+	height: 3px;
+	border-radius: 20px;
+}
+.line_up_part_1 {
+	margin-top: 10%;
+	width: 95%;
+	margin-left: 2%;
+}
+.line_up_part_2 {
+	margin-top: 16%;
+	margin-left: 2%;
+	width: 95%;
+}
+.profile_main_part_1 {
+    position: absolute;
+    height: 10%;
+    width:37%;
+    margin-left: 25%;
+    margin-top:7.6%;
+    # background-color: #b36a5c;
+}
+#main_part_text_1, #main_part_text_2 {
+	text-align: center;
+	# background-color: #DCDCDC;
+	margin-top: 8%;
+	margin-left:40%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex; 
+    color: #474A5;
+}
+.cube_1, .cube_2 {
+	position: absolute;
+	background-color: #b36a5c;
+	margin-top: 5%;
+	margin-left: 25%;
+	width: 40px;
+	height: 60px;
+	transform: skew(-20deg);
+}
+#cube_text_1, #cube_text_2 {
+	text-align: center;
+	margin-top: 40%;
+	margin-left: 40%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex; 
+    color: #DCDCDC;
+}
+.profile_main_part_2 {
+    position: absolute;
+    height: 10%;
+    width:38%;
+    margin-left: 62%;
+    margin-top:7.6%;
+    # background-color: #244757;
+}
+.h1_main {
+	# background-color: #88706B;
+	margin-left: 25%;
+	margin-top: 15%;
+	width: 75%;
+	height:10%;
+}
+.main_part {
+	# background-color: #D0D0D0;
+	margin-left: 25%;
+	margin-top: 0;
+	width: 75%;
+	height:80%;
+}
+#personal_info_h1 {
+	position: absolute;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex; 
+    color: black;
+	text-transform: uppercase;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+/* История бронирования*/
+.booking_story {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;   
+}
+.booking_story:target {
+    display: block;
+    pointer-events: auto;
+}
+.booking_story > div {
+    width: 1000px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 5px;
+    background-color: #A5A5A5;
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+.payment-title {
+    width: 100%;
+    text-align: center;
+}
+
+.form-container .field-container:first-of-type {
+    grid-area: name;
+}
+
+.form-container .field-container:nth-of-type(2) {
+    grid-area: number;
+}
+
+.form-container .field-container:nth-of-type(3) {
+    grid-area: expiration;
+}
+
+.form-container .field-container:nth-of-type(4) {
+    grid-area: security;
+}
+
+.field-container input {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.field-container {
+    position: relative;
+}
+
+.form-container {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 90px 90px 90px;
+    grid-template-areas: "name name""number number""expiration security";
+    max-width: 400px;
+    padding: 20px;
+    color: #707070;
+}
+
+label {
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+
+input {
+    margin-top: 3px;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+
+.ccicon {
+    height: 38px;
+    position: absolute;
+    right: 6px;
+    top: calc(50% - 17px);
+    width: 60px;
+}
+/* На главную */
+.on_main {
+    position: absolute;
+    background-color: rgb(102, 102, 102);
+    margin-left: 89.5%;
+    margin-top: 20%;
+    width: 200px;
+    height: 50px;
+    transform: rotate(-90deg);
+}
+#on_main_text {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    color: #E5E4E2;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+#arrow_up {
+    margin-left: 65%;
+	margin-top: -28.5%;
+	color: #ffffff;
+	width: 50px;
+	height: 50px;
+}
+/* Подвал */
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	background-color: #293133;
+	top: 150%;
+}
+ul {
+	line-height: 60px;
+}
+#dd_h1 {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;   
+}
+#list_1 {
+	position: absolute;
+	# background-color: #A5A5A5;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 6%;
+	margin-top: 4%;
+	width: 20%;
+	font-family: arial;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 60px;
+    display: flex;
+	color: #DCDCDC;
+}
+#list_2 {
+	position: absolute;
+	# background-color: #B8B799;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 30%;
+	margin-top: 3.8%;
+	width: 20%;
+	font-family: arial;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 60px;
+    display: flex;
+	color: #DCDCDC;
+}
+#image_VK {
+	position: absolute;
+	margin-left: 0;
+	margin-top: 15%;
+	width: 50px;
+	height: 50px;
+}
+#image_TWIT {
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 17%;
+	width: 35px;
+	height: 35px;
+}
+#image_YOUTUBE {
+	position: absolute;
+	margin-left: 35%;
+	margin-top: 16%;
+	width: 40px;
+	height: 40px;
+}
+#image_facebook {
+	position: absolute;
+	margin-left: 50%;
+	margin-top: 16%;
+	width: 35px;
+	height: 35px;
+}
+#list_3 {
+	position: absolute;
+	# background-color: #B8B799;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 52%;
+	margin-top: 3.8%;
+	width: 20%;
+	font-family: arial;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 60px;
+    display: flex;
+	color: #DCDCDC;
+}
+#mastercard {
+	position: absolute;
+	margin-left: 0;
+	margin-top: 16%;
+	width: 180px;
+	height: 140px;
+}
+#p_3 {
+	position: absolute;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 50%;
+	margin-top: 28%;
+	width: 45%;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+	color: #DCDCDC;
+	text-align: justify;
+}
+#list_4 {
+	position: absolute;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 82%;
+	margin-top: 3.8%;
+	width: 20%;
+	font-family: arial;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 60px;
+    display: flex;
+	color: #DCDCDC;
+}
+#mobile {
+	position: absolute;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin-left: 0%;
+	margin-top: 20%;
+	width: 45%;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+	color: #DCDCDC;
+	text-align: justify;
+}
+/* Кнопка для открытия */
+.css-modal-checkbox, .sign-modal-checkbox, .booking_button, .branches_button {
+    display: inline-flex;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;    
+}
+.css-modal-checkbox:hover, .sign-modal-checkbox:hover, .booking_button:hover, .branches_button:hover,
+.css-modal-checkbox:active, .sign-modal-checkbox:active, .booking_button:active, .branches_button:active,
+.css-modal-checkbox:focus, .sign-modal-checkbox:focus, .booking_button:focus, .branches_button:focus {
+    color: #FFF;
+}
+.css-modal-checkbox:before, .sign-modal-checkbox:before, .booking_button:before, .branches_button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    bottom: 0;
+    left: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid #A5A5A5;
+    transition: transform 0.5s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.css-modal-checkbox:hover:before, .sign-modal-checkbox:hover:before, .booking_button:hover:before, .branches_button:hover:before,
+.css-modal-checkbox:active:before, .sign-modal-checkbox:active:before, .booking_button:active:before, .branches_button:active:before,
+.css-modal-checkbox:focus:before, .sign-modal-checkbox:focus:before, .booking_button:focus:before, .branches_button:focus:before {
+    transform: translateX(0);
+}
+ 
+/* Контейнер, который затемняет страницу */
+#css-modal-checkbox + .cmc, #sign-modal-checkbox + .cmc {
+    display: none;
+}
+#css-modal-checkbox:checked + .cmc, #sign-modal-checkbox:checked + .cmc {
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+    z-index: 4;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: bg 0.5s ease;
+    background: rgba(41, 49, 51, 0.9);
+}
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=date], input[type=time] {
+    width: 75%;
+    padding: 20px;
+    margin: -3.5% 0 0 20%;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+label {
+    margin-left: 3%;
+	margin-top: 5%;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 10px;
+    display: flex; 
+    color: #474A5;
+
+}
+button[type=submit] {
+	background-color: #b36a5c;
+    color: white;
+    padding: 16px 51px;
+    margin: 5% 77.5%;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+	text-transform: uppercase;
+	width: 200px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex; 
+    color: #474A5;
+}
+button[type=submit]:hover {
+    opacity: 2;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=time]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
